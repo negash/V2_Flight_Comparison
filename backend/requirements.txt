@@ -10,5 +10,4 @@ pytest
 pydantic-settings
 opik
 
-
 #pip install -r requirements.txt
