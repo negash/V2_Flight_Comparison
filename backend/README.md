@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 **Project Structure**
 
-<img src="assets/Project_Structure.png" width="120%" alt="Project Architecture">
+<img src="assets/Project_Structure_ed.png" width="120%" alt="Project Architecture">
 
 **Configuration**
 
