@@ -20,7 +20,12 @@ A **deterministic, production-ready flight comparison API** built with **FastAPI
 
 **_Architecture_**
 
-[&lt;img src=&#34;assets/V2_flight_com.jpg” style=&#34;width:50%; height:auto;&#34; alt=&#34;Project Architecture&#34; /&gt;]()
+<img src="assets/V2_flight_com.jpg" width="80%" alt="Project Architecture">
+
+
+
+
+
 
 **Dependencies**
 
@@ -32,31 +37,7 @@ pip install -r requirements.txt
 
 **Project Structure**
 
-V2_Flight_Comparison/
-
-└── backend
-
-│── app/
-
-│ ├── main.py # FastAPI application entrypoint
-
-│ ├── amadeus_client.py # Flight search API integration
-
-**│ ├── llm_parser.py** # LangChain-based LLM query parser
-
-│ ├── flight_service.py # Core business logic
-
-**│ ├── schemas.py** # Pydantic request/response schemas
-
-**│ ├── settings.py** # Environment config
-
-**│ ├── observability.py** # Opik setup (tracing & evaluation)
-
-│── tests/
-
-│ └── request_test.py
-
-│── .env
+<img src="assets/Project_Structure.png" width="120%" alt="Project Architecture">
 
 **Configuration**
 
@@ -86,11 +67,11 @@ LangChain is intentionally used as a **thin abstraction layer** :
 
 {
 
-\*\* \*\*"origin": "SFO",
+"origin": "SFO",
 
-\*\* \*\*"destination": "CDG",
+"destination": "CDG",
 
-\*\* \*\*"date": "2025-01-17"
+"date": "2025-01-17"
 
 }
 
@@ -133,7 +114,7 @@ POST /search
 
 {
 
-\*\* \*\*"query": "Find cheap flights from San Francisco to Paris next Friday"
+"query": "Find cheap flights from San Francisco to Paris next Friday"
 
 }
 
@@ -149,55 +130,8 @@ curl -X POST http://localhost:8000/search \
 
 Below is an example response when returning the **top 3 cheapest flights** :
 
-{
+<img src="assets/response.png" width="80%" alt="Project Architecture">
 
-\*\* \*\*"flights": [
-
-\*\* \*\*{
-
-\*\* \*\*"airline": "TN",
-
-\*\* \*\*"price": 509.0,
-
-\*\* \*\*"departure": "SFO",
-
-\*\* \*\*"arrival": "CDG",
-
-\*\* \*\*"duration": "PT14H56M"
-
-\*\* \*\*},
-
-\*\* \*\*{
-
-\*\* \*\*"airline": "TN",
-
-\*\* \*\*"price": 509.0,
-
-\*\* \*\*"departure": "SFO",
-
-\*\* \*\*"arrival": "CDG",
-
-\*\* \*\*"duration": "PT16H5M"
-
-\*\* \*\*},
-
-\*\* \*\*{
-
-\*\* \*\*"airline": "FI",
-
-\*\* \*\*"price": 741.2,
-
-\*\* \*\*"departure": "SFO",
-
-\*\* \*\*"arrival": "CDG",
-
-\*\* \*\*"duration": "PT30H11M"
-
-\*\* \*\*}
-
-\*\* \*\*]
-
-}
 
 **Observability & Evaluation**
 
