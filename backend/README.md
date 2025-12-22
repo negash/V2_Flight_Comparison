@@ -1,6 +1,6 @@
 **V2 – Flight Comparison Model**
 
-A **deterministic, production-ready flight comparison API** built with **FastAPI** , **LangChain structured output** , **OpenAI** , and **Amadeus Flight Search** , with **Opik observability** for tracing and evaluation.
+A **deterministic, production-ready flight comparison API** built with **FastAPI** , **LangChain structured output** , **OpenAI** , and **Amadeus Flight Search** , with **Opik observability** for tracing and evaluation .
 
 **Overview**
 
