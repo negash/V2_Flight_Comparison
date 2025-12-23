@@ -123,7 +123,9 @@ curl -X POST http://localhost:8000/search \
 
 **Example Response**
 
-Below is an example response when returning the **top 3 cheapest flights** :
+Below are the **top 3 cheapest flights** responses :
+
+<img src="assets/response.png" width="80%" alt="Project Architecture">
 
 **Observability & Evaluation**
 
