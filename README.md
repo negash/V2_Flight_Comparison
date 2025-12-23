@@ -52,11 +52,10 @@ settings.py uses pydantic.BaseSettings to automatically load and validate enviro
 
 The system uses **LangChain** with **structured output schemas** to extract flight parameters from natural-language queries.
 
-LangChain is intentionally used as a **thin abstraction layer** :
+LangChain is used as a **abstraction layer** :
 
 - Runnable execution
-- JSON-only, schema-validated output
-- No agent loops or hidden control flow
+- JSON, schema-validated output
 
 **Amadeus Flight Search**
 
