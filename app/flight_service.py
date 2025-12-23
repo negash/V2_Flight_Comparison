@@ -71,7 +71,7 @@ async def search_flights_from_query(query: str) -> list[dict]:
             "price": float(offer["price"]["total"]),
             "departure": offer["itineraries"][0]["segments"][0]["departure"]["iataCode"],
             "arrival": offer["itineraries"][0]["segments"][-1]["arrival"]["iataCode"],
-            "duration": offer["itineraries"][0]["duration"],
+            "duration": offer["itineraries"][0]["duration"]
             # "booking_reference": offer["id"]  # "air["offer["id
         }
         for offer in data[:5]
