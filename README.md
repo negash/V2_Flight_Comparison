@@ -22,11 +22,6 @@ A **deterministic, production-ready flight comparison API** built with **FastAPI
 
 <img src="assets/V2_flight_com.jpg" width="80%" alt="Project Architecture">
 
-
-
-
-
-
 **Dependencies**
 
 All dependencies are listed in requirements.txt.
@@ -129,9 +124,6 @@ curl -X POST http://localhost:8000/search \
 **Example Response**
 
 Below is an example response when returning the **top 3 cheapest flights** :
-
-<img src="assets/response.png" width="80%" alt="Project Architecture">
-
 
 **Observability & Evaluation**
 
