@@ -58,18 +58,6 @@ LangChain is intentionally used as a **thin abstraction layer** :
 - JSON-only, schema-validated output
 - No agent loops or hidden control flow
 
-**Guaranteed Output Schema**
-
-{
-
-"origin": "SFO",
-
-"destination": "CDG",
-
-"date": "2025-01-17"
-
-}
-
 **Amadeus Flight Search**
 
 - Uses Amadeus **sandbox API**
@@ -148,11 +136,11 @@ This ensures:
 
 **Basic API tests are located in:**
 
-backend/tests/request_test.py
+tests/request_test.py
 
 Run tests with:
 
-python backend/tests/request_test.py
+python tests/request_test.py
 
 **Summary**
 
