@@ -125,8 +125,6 @@ curl -X POST http://localhost:8000/search \
 
 Below is an example response when returning the **top 3 cheapest flights** :
 
-<img src="assets/response.png" width="80%" alt="Project Architecture">
-
 **Observability & Evaluation**
 
 **Opik Integration**
