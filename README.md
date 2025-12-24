@@ -131,6 +131,8 @@ This ensures:
 - Easy debugging
 - Production-grade monitoring
 
+After initializing the server via uvicorn app.main:app --reload, you can monitor the latency breakdown between the LLM and the API. Detailed execution traces are available at the Opic URL provided in the console output. Alternatively, logs can be accessed directly through the Opic dashboard at comet.com
+
 **Testing**
 
 **Basic API tests are located in:**
