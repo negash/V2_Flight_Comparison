@@ -20,7 +20,7 @@ A **deterministic, production-ready flight comparison API** built with **FastAPI
 
 **_Architecture_**
 
-<img src="assets/V2_flight_com.jpg" width="80%" alt="Project Architecture">
+<img src="assets/V2_Flight_model.png" width="80%" alt="Project Architecture">
 
 **Dependencies**
 
