@@ -1,17 +1,17 @@
 **V2 – Flight Comparison Model**
 
-A **deterministic, production-ready flight comparison API** built with **FastAPI** , **LangChain structured output** , **OpenAI** , and **Amadeus Flight Search** , with **Opik observability** for tracing and evaluation .
+A deterministic, production-ready flight comparison API built with **FastAPI** , **LangChain** structured output , **OpenAI** , and **Amadeus Flight Search** , with **Opik observability** for tracing and evaluation .
 
 **Overview**
 
-**V2- Flight Comparison** converts natural-language flight requests into structured search parameters using **LLM-powered parsing** , queries the **Amadeus Flight Search API** for real flight offers, and returns **ranked, normalized flight results** .
+**V2- Flight Comparison** converts natural-language flight requests into structured search parameters using LLM-powered parsing, queries the Amadeus Flight Search API for real flight offers, and returns ranked, normalized flight results.
 
 **Key Characteristics**
 
 - **FastAPI** REST API
 - **LangChain** used as a _thin wrapper_ (Runnable + structured output)
 - **OpenAI** for natural-language → structured query parsing
-- **Amadeus, Flight Search API**
+- **Amadeus**, Flight Search API
 - **Opik** for tracing, logging, and evaluation
 - Deterministic validation & normalization
 - Ranked flight results (price ascending)
@@ -52,14 +52,14 @@ settings.py uses pydantic.BaseSettings to automatically load and validate enviro
 
 The system uses **LangChain** with **structured output schemas** to extract flight parameters from natural-language queries.
 
-LangChain is used as a **abstraction layer** :
+LangChain is used as a abstraction layer:
 
 - Runnable execution
 - JSON, schema-validated output
 
 **Amadeus Flight Search**
 
-- Uses Amadeus **sandbox API**
+- Uses Amadeus sandbox API
 - OAuth2 client credentials flow
 - Fetches flight offers for the requested route and date
 - Raw Amadeus responses are normalized into a clean internal schema
@@ -73,8 +73,8 @@ flight_service.py is the heart of the system:
 - Guards against past dates (auto-shifts to future)
 - Queries Amadeus Flight Search API
 - Normalizes flight offers
-- Ranks flights by **price (ascending)**
-- Returns the **top N cheapest flights** (configurable)
+- Ranks flights by price (ascending)
+- Returns the top N cheapest flights (configurable)
 
 **Ranking Logic**
 
