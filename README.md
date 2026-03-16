@@ -18,9 +18,9 @@ A deterministic, production-ready flight comparison API built with **FastAPI** ,
 - Clean, structured response schema
 - Evaluation-friendly & production-ready
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-green?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-yellow?logo=openai&logoColor=black)](https://platform.openai.com/)
-[![LangChain](https://img.shields.io/badge/LangChain-red)](https://www.langchain.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-darkgreen?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-darkyellow?logo=openai&logoColor=black)](https://platform.openai.com/)
+[![LangChain](https://img.shields.io/badge/LangChain-darkred)](https://www.langchain.com/)
 
 **_Architecture_**
 
