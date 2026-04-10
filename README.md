@@ -1,23 +1,32 @@
-**V2 – Flight Comparison Model**
+![Banner](./assets/Banner2.png)
 
-A deterministic, production-ready flight comparison API built with **FastAPI** , **LangChain** structured output , **OpenAI** , and **Amadeus Flight Search** , with **Opik observability** for tracing and evaluation .
+📖 **Overview**
 
-**Overview**
+The Flight Comparison API is a production-ready service that transforms natural language queries into structured flight searches.
 
-**V2- Flight Comparison** converts natural-language flight requests into structured search parameters using LLM-powered parsing, queries the Amadeus Flight Search API for real flight offers, and returns ranked, normalized flight results.
+Built with FastAPI and powered by LLM-based parsing, the system interprets user requests (e.g., “Find me the cheapest flight from NYC to London next week”), converts them into precise search parameters, and retrieves real-time flight offers from the Amadeus API.
 
-**Key Characteristics**
+Results are normalized, ranked, and returned in a clean, developer-friendly format. The system also includes observability and tracing to monitor performance and ensure reliability.
 
-- **FastAPI** REST API
-- **LangChain** used as a _thin wrapper_ (Runnable + structured output)
-- **OpenAI** for natural-language → structured query parsing
-- **Amadeus**, Flight Search API
-- **Opik** for tracing, logging, and evaluation
-- Deterministic validation & normalization
-- Ranked flight results (price ascending)
-- Clean, structured response schema
-- Evaluation-friendly & production-ready
+✨ **Features**
 
+🔍 Search for available flights  
+⚖️ Compare multiple flight options  
+⚡ Fast and user-friendly interface  
+📊 Clear and organized results  
+
+## ⚙️ Key Characteristics
+
+- REST API built with FastAPI for high performance and scalability
+- Natural language processing powered by OpenAI
+- LangChain used for structured orchestration (Runnable + output parsing)
+- Integration with Amadeus Flight Search API for live data
+- Opik used for observability, tracing, and evaluation
+- Deterministic validation pipeline ensures reliable outputs
+- Flight results ranked by price (ascending order)
+- Structured response schema designed for API consumers
+- Built with production readiness and testing in mind
+  
 [![FastAPI](https://img.shields.io/badge/FastAPI-darkgreen?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-darkyellow?logo=openai&logoColor=black)](https://platform.openai.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-darkred)](https://www.langchain.com/)
@@ -27,26 +36,32 @@ A deterministic, production-ready flight comparison API built with **FastAPI** ,
 
 <img src="assets/V2_Flight_model.png" width="80%" alt="Project Architecture">
 
-**Dependencies**
+📦 **Installation**
 
-All dependencies are listed in requirements.txt.
+Clone the repository:
 
-Install them with:
+git clone https://github.com/negash/V2_Flight_Comparison.git
+cd V2_Flight_Comparison
+
+Install dependencies:
 
 pip install -r requirements.txt
 
-**Project Structure**
+📁 **Project Structure**
 
 <img src="assets/Project_Structure_ed.png" width="120%" alt="Project Architecture">
 
-**Configuration**
 
-Environment Variables (.env)
+## ⚙️ Configuration
 
-OPENAI_API_KEY=your_openai_key
+This project requires environment variables to run correctly.
 
-AMADEUS_API_KEY=your_amadeus_key
+### 📁 Environment Variables ('.env')
 
+Create a '.env' file in the project root and add the following:
+
+OPENAI_API_KEY=your_openai_key<br>
+AMADEUS_API_KEY=your_amadeus_key<br>
 AMADEUS_API_SECRET=your_amadeus_secret
 
 **Settings Loader**
@@ -163,3 +178,14 @@ Ideal for:
 - LLM evaluation
 - Retrieval + ranking pipelines
 - Real-world API deployments
+
+ **Future Improvements**
+
+- 🌐 Add web-based interface  
+- 📱 Mobile-friendly version  
+- 📈 Advanced filtering and sorting  
+- 💾 Save favorite flights 
+
+👤 Author
+
+Developed by Negash
