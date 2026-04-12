@@ -40,7 +40,7 @@ Results are normalized, ranked, and returned in a clean, developer-friendly form
 
 Clone the repository:
 
-git clone https://github.com/negash/V2_Flight_Comparison.git
+git clone https://github.com/negash/V2_Flight_Comparison.git </br>
 cd V2_Flight_Comparison
 
 Install dependencies:
@@ -181,10 +181,10 @@ Ideal for:
 
  **Future Improvements**
 
-- 🌐 Add web-based interface  
-- 📱 Mobile-friendly version  
-- 📈 Advanced filtering and sorting  
-- 💾 Save favorite flights 
+- Add web-based interface  
+- Mobile-friendly version  
+- Advanced filtering and sorting  
+- Save favorite flights 
 
 👤 Author
 
