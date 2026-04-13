@@ -12,7 +12,7 @@
 - [Future Improvements](#future-improvements)
 - [License](#license)
   
-## 📖 Overview
+## Overview 📖
 
 The Flight Comparison API is a production-ready service that transforms natural language queries into structured flight searches.
 
@@ -20,14 +20,14 @@ Built with FastAPI and powered by LLM-based parsing, the system interprets user 
 
 Results are normalized, ranked, and returned in a clean, developer-friendly format. The system also includes observability and tracing to monitor performance and ensure reliability.
 
-## ✨ Features
+## Features ✨
 
 🔍 Search for available flights  
 ⚖️ Compare multiple flight options  
 ⚡ Fast and user-friendly interface  
 📊 Clear and organized results  
 
-## ⚙️ Key Characteristics
+## Key Characteristics ⚙️
 
 - REST API built with FastAPI for high performance and scalability
 - Natural language processing powered by OpenAI
@@ -48,7 +48,7 @@ Results are normalized, ranked, and returned in a clean, developer-friendly form
 
 <img src="assets/V2_Flight_model.png" width="80%" alt="Project Architecture">
 
-## 📦 Installation
+## Installation 📦
 
 Clone the repository:
 
@@ -59,16 +59,16 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-## 📁 Project Structure
+## Project Structure 📁
 
 <img src="assets/Project_Structure_ed.png" width="120%" alt="Project Architecture">
 
 
-## ⚙️ Configuration
+## Configuration ⚙️
 
 This project requires environment variables to run correctly.
 
-## 📁 Environment Variables ('.env')
+## Environment Variables ('.env') 📁
 
 Create a '.env' file in the project root and add the following:
 
@@ -140,7 +140,7 @@ curl -X POST http://localhost:8000/search \
 
 -d '{"query": "Find cheap flights from San Francisco to Paris next Friday"}'
 
-**Example Response**
+## Example Response
 
 Below are the **top 3 cheapest flights** responses :
 
