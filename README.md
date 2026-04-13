@@ -1,9 +1,17 @@
 ![Banner](./assets/Banner2.png)
 
-## 📑 Quick Links
-
- [Overview](#overview) • [Features](#features) • [Key Characteristics](#key-characteristics) • [Installation](#installation) • [Project Structure](#project-structure) • [Configuration](#configuration) • [Example Response](#example-response) • [Observability and Evaluation](#observability-and-evaluation) • [Future Improvements](#future-improvements) • [License](#license)
-
+## Quick Links
+- [Overview](#overview)
+- [Features](#features)
+- [Key Characteristics](#key-characteristics)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+- [Example Response](#example-response)
+- [Observability and Evaluation](#observability-and-evaluation)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+  
 ## 📖 Overview
 
 The Flight Comparison API is a production-ready service that transforms natural language queries into structured flight searches.
