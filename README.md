@@ -4,7 +4,7 @@
 
 [Overview](#overview) • [Features](#features) • [Key Characteristics](#key-characteristics) • [Installation](#installation) • [Project Structure](#project-structure) • [Configuration](#configuration) • [Example Response](#example-response) • [Observability and Evaluation](#observability-and-evaluation) • [Future Improvements](#future-improvements) • [License](#license)
 
-📖 **Overview**
+## 📖 Overview
 
 The Flight Comparison API is a production-ready service that transforms natural language queries into structured flight searches.
 
@@ -12,7 +12,7 @@ Built with FastAPI and powered by LLM-based parsing, the system interprets user 
 
 Results are normalized, ranked, and returned in a clean, developer-friendly format. The system also includes observability and tracing to monitor performance and ensure reliability.
 
-✨ **Features**
+## ✨ Features
 
 🔍 Search for available flights  
 ⚖️ Compare multiple flight options  
@@ -40,7 +40,7 @@ Results are normalized, ranked, and returned in a clean, developer-friendly form
 
 <img src="assets/V2_Flight_model.png" width="80%" alt="Project Architecture">
 
-📦 **Installation**
+## 📦 Installation
 
 Clone the repository:
 
@@ -51,7 +51,7 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-📁 **Project Structure**
+## 📁 Project Structure
 
 <img src="assets/Project_Structure_ed.png" width="120%" alt="Project Architecture">
 
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 This project requires environment variables to run correctly.
 
-### 📁 Environment Variables ('.env')
+## 📁 Environment Variables ('.env')
 
 Create a '.env' file in the project root and add the following:
 
@@ -68,11 +68,11 @@ OPENAI_API_KEY=your_openai_key<br>
 AMADEUS_API_KEY=your_amadeus_key<br>
 AMADEUS_API_SECRET=your_amadeus_secret
 
-**Settings Loader**
+## Settings Loader
 
 settings.py uses pydantic.BaseSettings to automatically load and validate environment variables.
 
-**LLM Query Parsing**
+## LLM Query Parsing
 
 The system uses **LangChain** with **structured output schemas** to extract flight parameters from natural-language queries.
 
@@ -81,14 +81,14 @@ LangChain is used as a abstraction layer:
 - Runnable execution
 - JSON, schema-validated output
 
-**Amadeus Flight Search**
+## Amadeus Flight Search
 
 - Uses Amadeus sandbox API
 - OAuth2 client credentials flow
 - Fetches flight offers for the requested route and date
 - Raw Amadeus responses are normalized into a clean internal schema
 
-**Core Logic – flight_service.py**
+## Core Logic – flight_service.py
 
 flight_service.py is the heart of the system:
 
@@ -100,23 +100,23 @@ flight_service.py is the heart of the system:
 - Ranks flights by price (ascending)
 - Returns the top N cheapest flights (configurable)
 
-**Ranking Logic**
+## Ranking Logic
 
 - Flights are sorted by **total price (ascending)**
 - Only the **cheapest N offers** are returned
 - Default behavior can be easily adjusted in flight_service.py
 
-**API Entrypoint**
+## API Entrypoint
 
-**Start the Server**
+## Start the Server
 
 uvicorn app.main:app --reload
 
-**Endpoint**
+## Endpoint
 
 POST /search
 
-**Request Body**
+## Request Body
 
 {
 
@@ -124,7 +124,7 @@ POST /search
 
 }
 
-**Example curl Command or run (python tests/request_test.py)**
+## Example curl Command or run (python tests/request_test.py)
 
 curl -X POST http://localhost:8000/search \
 
@@ -138,9 +138,9 @@ Below are the **top 3 cheapest flights** responses :
 
 <img src="assets/response.png" width="80%" alt="Project Architecture">
 
-**Observability & Evaluation**
+## Observability & Evaluation
 
-**Opik Integration**
+## Opik Integration
 
 The project integrates **Opik** for:
 
@@ -183,18 +183,18 @@ Ideal for:
 - Retrieval + ranking pipelines
 - Real-world API deployments
 
- **Future Improvements**
+ ## Future Improvements
 
 - Add web-based interface  
 - Mobile-friendly version  
 - Advanced filtering and sorting  
 - Save favorite flights 
 
-**License**
+## License
 
 This project is licensed under the MIT License.  </br>
 Copyright (c) 2026 Negash (https://github.com/negash)
 
-👤 Author
+## 👤 Author
 
 Developed by Negash
