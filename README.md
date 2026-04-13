@@ -27,7 +27,7 @@ Results are normalized, ranked, and returned in a clean, developer-friendly form
 ⚡ Fast and user-friendly interface  
 📊 Clear and organized results  </br>
 
-## ⚙️Key Characteristics 
+## Key Characteristics 
 
 - REST API built with FastAPI for high performance and scalability
 - Natural language processing powered by OpenAI
