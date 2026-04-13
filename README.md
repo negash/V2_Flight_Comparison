@@ -25,7 +25,7 @@ Results are normalized, ranked, and returned in a clean, developer-friendly form
 🔍 Search for available flights  
 ⚖️ Compare multiple flight options  
 ⚡ Fast and user-friendly interface  
-📊 Clear and organized results  
+📊 Clear and organized results  </br>
 
 ## ⚙️Key Characteristics 
 
