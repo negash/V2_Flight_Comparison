@@ -186,6 +186,11 @@ Ideal for:
 - Advanced filtering and sorting  
 - Save favorite flights 
 
+**License**
+
+This project is licensed under the MIT License.  </br>
+Copyright (c) 2026 Negash (https://github.com/negash)
+
 👤 Author
 
 Developed by Negash
